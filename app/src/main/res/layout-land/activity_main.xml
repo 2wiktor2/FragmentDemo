@@ -30,16 +30,25 @@
 
 
 
-
     <TextView
+        android:id="@+id/bottom_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:text="Fragment"
         android:textColor="#ffffff"
         android:textSize="34sp"
-        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toLeftOf="@id/button_to_next_activity" />
+
+    <Button
+        android:text="go to second Activity"
+        android:id="@+id/button_to_next_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/bottom_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottom_text_view" />
 
 </android.support.constraint.ConstraintLayout>
